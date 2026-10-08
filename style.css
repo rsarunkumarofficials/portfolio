@@ -88,9 +88,6 @@ html {
 
 .nav-menu {
     display: flex;
-    position: absolute;
-    top: 50px;
-    right: 20px;
     gap: 15px;
     align-items: center;
 }
