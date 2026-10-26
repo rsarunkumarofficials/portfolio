@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.documentElement.classList.add('js');
+        window.setTimeout(() => {
+            if (!window.__portfolioReady) document.documentElement.classList.remove('js');
+        }, 4000);
+    </script>
 </head>
 <body>
 
@@ -59,12 +65,7 @@
                     </div>
                 </div>
                 <div class="hero-image reveal-right">
-                    <div class="image-wrapper glass-panel">
-                        <!-- Placeholder for Hero Image -->
-                        <div class="hero-placeholder">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                    </div>
+                    <img class="hero-portrait" src="./Professional%20Laptop%20Portrait%20Cutout.png" alt="Arun Kumar" width="1536" height="1024" loading="eager" fetchpriority="high" decoding="async">
                 </div>
             </div>
         </section>
@@ -77,7 +78,7 @@
                     <div class="line"></div>
                 </div>
                 <div class="about-content">
-                    <div class="about-text glass-panel reveal-up">
+                    <div class="about-text glass reveal-up">
                         <p>Welcome to my portfolio! I'm a passionate developer focused on creating clean, intuitive, and highly functional web applications.</p>
                         <ul class="about-list">
                             <li>
@@ -123,7 +124,7 @@
                 </div>
                 <div class="skills-grid">
                     <!-- Programming Languages -->
-                    <div class="skill-category glass-panel reveal-up" style="transition-delay: 0ms;">
+                    <div class="skill-category glass reveal-up">
                         <h3><i class="fa-solid fa-terminal"></i> Programming</h3>
                         <div class="skill-items">
                             <div class="skill-tag">Python</div>
@@ -133,7 +134,7 @@
                         </div>
                     </div>
                     <!-- Web Development -->
-                    <div class="skill-category glass-panel reveal-up" style="transition-delay: 100ms;">
+                    <div class="skill-category glass reveal-up">
                         <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
                         <div class="skill-items">
                             <div class="skill-tag">HTML5</div>
@@ -144,7 +145,7 @@
                         </div>
                     </div>
                     <!-- Tools & Tech -->
-                    <div class="skill-category glass-panel reveal-up" style="transition-delay: 200ms;">
+                    <div class="skill-category glass reveal-up">
                         <h3><i class="fa-solid fa-wrench"></i> Tools</h3>
                         <div class="skill-items">
                             <div class="skill-tag">Git & GitHub</div>
@@ -166,7 +167,7 @@
                 </div>
                 <div class="projects-grid">
                     <!-- Project 1 -->
-                    <div class="project-card glass-panel reveal-up" style="transition-delay: 0ms;">
+                    <div class="project-card glass reveal-up">
                         <div class="project-img placeholder-img">
                             <i class="fa-solid fa-id-card"></i>
                         </div>
@@ -180,7 +181,7 @@
                         </div>
                     </div>
                     <!-- Project 2 -->
-                    <div class="project-card glass-panel reveal-up" style="transition-delay: 100ms;">
+                    <div class="project-card glass reveal-up">
                         <div class="project-img placeholder-img">
                             <img src="./clg_project.png" alt="">
                         </div>
@@ -194,7 +195,7 @@
                         </div>
                     </div>
                     <!-- Project 3 -->
-                    <div class="project-card glass-panel reveal-up" style="transition-delay: 200ms;">
+                    <div class="project-card glass reveal-up">
                         <div class="project-img placeholder-img">
                             <i class="fa-solid fa-robot"></i>
                         </div>
@@ -207,9 +208,9 @@
                         </div>
                     </div>
                     <!-- Project 4 -->
-                    <div class="project-card glass-panel reveal-up" style="transition-delay: 100ms;">
+                    <div class="project-card glass reveal-up">
                         <div class="project-img placeholder-img">
-                            <img src="./hotel_ordering_website" alt="">
+                            <i class="fa-solid fa-hotel"></i>
                         </div>
                         <div class="project-info">
                             <h3>Hotel Billing Website</h3>
@@ -221,9 +222,9 @@
                         </div>
                     </div>
                     <!-- Project 5 -->
-                    <div class="project-card glass-panel reveal-up" style="transition-delay: 100ms;">
+                    <div class="project-card glass reveal-up">
                         <div class="project-img placeholder-img">
-                            <img src="./RS_OTT_App" alt="">
+                            <i class="fa-solid fa-film"></i>
                         </div>
                         <div class="project-info">
                             <h3>RS OTT App</h3>
@@ -247,7 +248,7 @@
                 </div>
                 
                 <div class="achievements-container">
-                    <div class="achievements-list glass-panel reveal-left">
+                    <div class="achievements-list glass reveal-left">
                         <h3><i class="fa-solid fa-trophy highlight"></i> Milestones</h3>
                         <ul>
                             <li>
@@ -275,7 +276,7 @@
                     </div>
                     
                     <div class="github-stats reveal-right">
-                        <img class="glass-panel" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rsarunkumarofficials&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" alt="Top Languages">
+                        <img class="glass" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rsarunkumarofficials&layout=compact&hide_border=true&bg_color=00000000&title_color=C9C8BF&text_color=BDBBB2&icon_color=AFACA1" alt="Top Languages">
                     </div>
                 </div>
             </div>
@@ -288,7 +289,7 @@
                     <h2>Get In <span class="highlight">Touch</span></h2>
                     <div class="line"></div>
                 </div>
-                <div class="contact-container glass-panel reveal-up">
+                <div class="contact-container glass reveal-up">
                     <div class="contact-info">
                         <h3>Let's Connect!</h3>
                         <p>Feel free to reach out for collaborations or just a friendly chat.</p>
